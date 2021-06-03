@@ -1,8 +1,10 @@
+
 <?php
 
+require_once __DIR__ . './items.php';
 
 
-class Premium
+class Premium extends Items
 {
 
     protected $name;
@@ -32,3 +34,7 @@ $user3->name = 'ID789412';
 
 
 $user_premium = [$user1, $user2, $user3];
+
+
+$name_login = '';
+$lastname_login = '';
