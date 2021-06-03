@@ -18,7 +18,7 @@ require_once __DIR__ . '/data/main.php';
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body id="main">
 
     <div class="welcome">
         <h1>Tecno-commerce</h1>
@@ -38,7 +38,8 @@ require_once __DIR__ . '/data/main.php';
                 <div class="box-text">
                     <h2> <?php echo $item->name ?> </h2>
                     <p> <?php echo $item->getText() ?>... </p>
-                    <h2>Prezzo : <?php echo $item->getPrice($loginID, $users_premium) ?>€ </h2>
+                    <h2>Prezzo <?php echo $item->price ?>€</h2>
+                    <h2> <?php echo $item->getPrice($loginID, $users_premium) ?> </h2>
                     <i class="fas fa-cart-plus"></i>
                 </div>
             </div>

@@ -44,9 +44,9 @@ class Items
     public function getPrice($ID, $array)
     {
         if (in_array($ID, $array)) {
-            return $this->getSconto(20);
+            return 'Prezzo scontato ' .  $this->getSconto(20) . '€';
         } else {
-            return $this->price;
+            return 'Non hai diritto a  sconti <br> Abbonati!!';
         }
     }
 

@@ -1,4 +1,10 @@
 
+const textWelcome = document.getElementById('userWelcome');
+const main = document.getElementById('main');
+
+
+
+
 
 
 let userName = prompt('Inserisci il tuo nome').trim();
@@ -14,5 +20,6 @@ while ((!isNaN(userLastName) || userLastName == '')) {
 }
 
 
+main.className = 'active';
 
-document.getElementById('userWelcome').innerHTML = 'Benvenuto ' + userName + '  ' + userLastName;
+textWelcome.innerHTML = 'Benvenuto ' + userName + '  ' + userLastName;
