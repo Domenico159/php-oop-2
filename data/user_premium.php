@@ -4,37 +4,38 @@
 require_once __DIR__ . './items.php';
 
 
-class Premium extends Items
+
+class Users
 {
 
-    protected $name;
-    protected $lastname;
-    protected $ID;
+    public $name;
+    public $lastname;
+    public $ID;
+    public $premium;
 }
 
 
-$user1 = new Premium();
+$user1 = new Users();
 $user1->name = 'Mario';
 $user1->lastname = 'Rossi';
-$user1->name = 'ID123456';
+$user1->ID = 'ID123456';
 
 
 
-$user2 = new Premium();
+$user2 = new Users();
 $user2->name = 'Domenico';
 $user2->lastname = 'Zummo';
-$user2->name = 'ID456123';
+$user2->ID = 'ID456123';
 
 
 
-$user3 = new Premium();
+$user3 = new Users();
 $user3->name = 'Mauro';
 $user3->lastname = 'Bianchi';
-$user3->name = 'ID789412';
+$user3->ID = 'ID789412';
+
+$users_premium = ['ID789412', 'ID456123'];
 
 
-$user_premium = [$user1, $user2, $user3];
 
-
-$name_login = '';
-$lastname_login = '';
+$items = [$item1, $item2, $item3, $item4, $item5, $item6, $item7, $item8];
